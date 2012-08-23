@@ -20,9 +20,11 @@ while (c < 4000000) {
 time = (new Date()).getTime() - time;
 print('I think the answer is: ' + sum);
 print('I thought about it for ' + time + ' milliseconds.');
+
 print('');
 print('I will try to calculate without requiring division.');
-
+// It is easy to prove that starting with 2 every 3rd fibonacci number is even.
+// Given this, the modulo can be ommitted and replaces with a unrolled loop of length 3
 sum = 0;
 a = 1;
 b = 1;
