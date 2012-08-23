@@ -21,5 +21,6 @@ if (JSLINT(source, {rhino: true})) {
         print('       ' + error.reason);
         print(error.evidence + '\n');
     }
+    quit(2);
 }
 
