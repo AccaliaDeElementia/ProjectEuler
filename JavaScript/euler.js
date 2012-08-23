@@ -9,6 +9,7 @@ var file = arguments[0],
 
 if (JSLINT(source, {rhino: true})) {
     print('JSLINT checks out OK!');
+    load(file);
 } else {
     for (i = 0; i < JSLINT.errors.length; i = i + 1) {
         error = JSLINT.errors[i];
@@ -22,4 +23,3 @@ if (JSLINT(source, {rhino: true})) {
     }
 }
 
-load(file);
